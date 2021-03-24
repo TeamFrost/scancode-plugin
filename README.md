@@ -1,5 +1,8 @@
 # ScanCode-Plugin
 
+![badge1](https://img.shields.io/github/license/TeamFrost/scancode-plugin)
+![badge2](https://img.shields.io/github/repo-size/TeamFrost/scancode-plugin)
+
 ## About
 
 This is a **ScanCode post-scan plugin** that generate a JSON property file, different from the default options, which is also compatible with dxplatform. \
@@ -17,7 +20,22 @@ Make sure Python 3.6 is installed first. Also keep in mind that this plugin was 
 ```
 git clone https://github.com/nexB/scancode-toolkit.git
 cd scancode-toolkit
-pip install scancode-toolkit
+```
+
+For Linux/Mac:
+
+```
+open a terminal in the scancode-toolkit folder
+run ./configure
+run source bin/activate
+```
+
+For Windows:
+
+```
+open a command prompt in the scancode-toolkit folder
+run configure
+run Scripts/activate
 ```
 
 For further information you can also read [ScanCode's documentation](https://scancode-toolkit.readthedocs.io/).
@@ -40,8 +58,16 @@ cd scancode-plugin
 
 Finally, you need to load the plugin by opening a terminal/command prompt and running:
 
+For Linux/Mac:
+
 ```
 pip install .
+```
+
+For Windows:
+
+```
+python -m pip install .
 ```
 
 ## Usage
@@ -57,6 +83,8 @@ If you installed our plugin correctly it should appear under the **post-scan** s
 ```
 --jsonprop
 ```
+
+If you the plugin is not working and you cannot see it in the _--help_ section you can try running _configure_ again in the root folder of scancode-toolkit. You can also try with _pip install scancode-toolkit_ or _python -m pip install scancode-toolkit_ for Windows users.
 
 To run your first scan you can try:
 
@@ -80,7 +108,7 @@ Lastly, to see the results provided by scancode you should open the file that yo
 
 ## Dx Platform
 
-After you have you **result.json** file generated
+After you have you **result.json** file generated you can upload the file to Dx Platform and see where in your files you can find emails, urls, licenses, copyrights or packages. Just keep in mind that you can run commands on scancode just for the things that interest you, for exemple by only searching for emails, the file will contain just emails. You can also make any combination of the 5 parameters to fulfill your search.
 
 ## Screenshots
 
