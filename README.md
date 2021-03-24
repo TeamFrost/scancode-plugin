@@ -24,25 +24,21 @@ For further information you can also read [ScanCode's documentation](https://sca
 
 **2. Install the plugin**
 
-First you need to clone the project via Git:
+Go into the **scancode-toolkit** folder and open a terminal/command prompt.
+
+```
+mkdir plugins
+cd plugins
+```
+
+Then you need to clone the project via Git:
 
 ```
 git clone https://github.com/TeamFrost/scancode-plugin.git
+cd scancode-plugin
 ```
 
-After you should go to the the folder of **scancode-toolkit** and make a folder named "plugins", the path should look like this:
-
-```
-scancode-toolkit/plugins/
-```
-
-Next copy the folder that contains the plugin here. If you made all the steps right the path should look like this:
-
-```
-scancode-toolkit/plugins/scancode-plugin/
-```
-
-The last step represents loading the plugin by opening a terminal/command prompt and running:
+Finally, you need to load the plugin by opening a terminal/command prompt and running:
 
 ```
 pip install .
@@ -81,6 +77,10 @@ The first _-cplue_ instructs scancode to look for copyrights, packages, licenses
 The path is without the root folder for purpose of integration with dxplatform. Also, likewise, the existence of the value field is motivated by the wanted integration.
 
 Lastly, to see the results provided by scancode you should open the file that you included in the command. Moreover, if you want this results to be seen in the terminal / command prompt you can replace _<path to the output file>_ with _-_.
+
+## Dx Platform
+
+After you have you **result.json** file generated
 
 ## Screenshots
 
