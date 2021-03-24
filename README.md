@@ -2,6 +2,7 @@
 
 ![badge1](https://img.shields.io/github/license/TeamFrost/scancode-plugin)
 ![badge2](https://img.shields.io/github/repo-size/TeamFrost/scancode-plugin)
+![badge3](https://img.shields.io/github/languages/top/TeamFrost/scancode-plugin)
 
 ## About
 
@@ -118,11 +119,11 @@ After you have you **result.json** file generated you can upload the file to Dx 
 
 ## Screenshots
 
-In the phot below you can see how the JSON is formatted after you run our plugin.
+In the photo below you can see how the JSON is formatted after you run our plugin. You can identify the type by looking at *category*
 ![Data](screenshots/data.png)
 \
 Here we can see how relevant is this in the Dx Platform and how easy we can identify which files use a license.
-![Dxplatform](screenshots/dxplatform.png)
+![Dxplatform](screenshots/dxplatfrom.png)
 
 ## Thanks
 
