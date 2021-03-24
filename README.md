@@ -80,6 +80,8 @@ The first _-cplue_ instructs scancode to look for copyrights, packages, licenses
 
 The path is without the root folder for purpose of integration with dxplatform. Also, likewise, the existence of the value field is motivated by the wanted integration.
 
+Lastly, to see the results provided by scancode you should open the file that you included in the command. Moreover, if you want this results to be seen in the terminal / command prompt you can replace _<path to the output file>_ with _-_.
+
 ## Screenshots
 
 ## Thanks
