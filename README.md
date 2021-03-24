@@ -70,6 +70,10 @@ For Windows:
 python -m pip install .
 ```
 
+## Docker
+
+You can use Docker to install scancode-toolkit by following the steps [here](https://scancode-toolkit.readthedocs.io/en/latest/getting-started/install.html#docker-install). Currently we are working on our own image which also includes the plugin.
+
 ## Usage
 
 To run scancode you should open a terminal/command prompt in its root directory and you can start with the help command to see all the options you have.
@@ -91,6 +95,8 @@ To run your first scan you can try:
 ```
 scancode -cplue <path to the directory you want to scan> --jsonprop --json-pp <path to the output file>
 ```
+
+**We strongly recommend that you use the _--ignore_ command to not run the scan for huge files, such as package-lock.json.**
 
 The first _-cplue_ instructs scancode to look for copyrights, packages, licenses, urls and email. After, our custom command for the plugin _--jsonprop_ generates a **result.json** file in the root directory of scancode. The file is not formatted and you should use an online converter to a prettier JSON if you want to better understand it. The files contains the following information:
 
