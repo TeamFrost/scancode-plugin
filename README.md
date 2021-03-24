@@ -118,6 +118,12 @@ After you have you **result.json** file generated you can upload the file to Dx 
 
 ## Screenshots
 
+In the phot below you can see how the JSON is formatted after you run our plugin.
+![Data](screenshots/data.png)
+\
+Here we can see how relevant is this in the Dx Platform and how easy we can identify which files use a license.
+![Dxplatform](screenshots/dxplatform.png)
+
 ## Thanks
 
 This plugin would not be possible without [nexB/scancode-toolkit](https://github.com/nexB/scancode-toolkit), so we would like to thank them for their work and be sure to also check them out.
