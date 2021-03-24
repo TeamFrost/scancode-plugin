@@ -3,11 +3,13 @@
 ![badge1](https://img.shields.io/github/license/TeamFrost/scancode-plugin)
 ![badge2](https://img.shields.io/github/repo-size/TeamFrost/scancode-plugin)
 ![badge3](https://img.shields.io/github/languages/top/TeamFrost/scancode-plugin)
+![CONTRI](https://img.shields.io/github/contributors/commonality/readme-inspector.svg)
 
 ## About
 
 This is a **ScanCode post-scan plugin** that generate a JSON property file, different from the default options, which is also compatible with dxplatform. \
 It is written in Python and does not work on its own, meaning it needs to have scancode-toolkit installed.
+It is important to know if a project has any **Copyrights, Licences, Packages** that you should be aware of and you can easily find any **Emails** and **Urls** used in your files. 
 
 ## Before Installing
 
@@ -122,8 +124,11 @@ After you have you **result.json** file generated you can upload the file to Dx 
 In the photo below you can see how the JSON is formatted after you run our plugin. You can identify the type by looking at *category*
 
 ![Data](screenshots/data.png)
-\
+
+
 Here we can see how relevant is this in the Dx Platform and how easy we can identify which files use a license.
+
+
 ![Dxplatform](screenshots/dxplatfrom.png)
 
 ## Thanks
