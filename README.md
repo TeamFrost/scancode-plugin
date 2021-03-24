@@ -8,8 +8,8 @@
 ## About
 
 This is a **ScanCode post-scan plugin** that generate a JSON property file, different from the default options, which is also compatible with dxplatform. \
+It is important to know if a project has any **Copyrights, Licences, Packages** that you should be aware of and you can easily find any **Emails** and **Urls** used in your files. \
 It is written in Python and does not work on its own, meaning it needs to have scancode-toolkit installed.
-It is important to know if a project has any **Copyrights, Licences, Packages** that you should be aware of and you can easily find any **Emails** and **Urls** used in your files. 
 
 ## Before Installing
 
