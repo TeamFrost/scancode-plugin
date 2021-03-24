@@ -48,7 +48,7 @@ class GetJSON(PostScanPlugin):
                     result.append({
                         "name": email["email"],
                         "category": "email",
-                        "file": resource.path,
+                        "file": resource.path.split("/", 1)[-1],
                         "value": 1
                     })
 
@@ -57,7 +57,7 @@ class GetJSON(PostScanPlugin):
                     result.append({
                         "name": url["url"],
                         "category": "url",
-                        "file": resource.path,
+                        "file": resource.path.split("/", 1)[-1],
                         "value": 1
                     })
 
@@ -66,26 +66,29 @@ class GetJSON(PostScanPlugin):
                     result.append({
                         "name": cp["value"],
                         "category": "copyright",
-                        "file": resource.path,
+                        "file": resource.path.split("/", 1)[-1],
                         "value": 1
                     })
 
             if hasattr(resource, 'licenses'):
-                for license in resource.licenses:
+                for lc in resource.licenses:
                     result.append({
-                        "name": license["license"],
+                        "name": lc["name"],
                         "category": "license",
-                        "file": resource.path,
+                        "file": resource.path.split("/", 1)[-1],
                         "value": 1
                     })
 
-        # for resource in codebase.walk():
-        #     print(dir(resource))
-        #     break
+            if hasattr(resource, 'packages'):
+                for package in resource.packages:
+                    result.append({
+                        "name": package["name"],
+                        "category": "package",
+                        "file": resource.path.split("/", 1)[-1],
+                        "value": 1
+                    })
 
         result_json = json.dumps(result)
 
         with open("result.json", "w") as f:
             f.write(result_json)
-
-        print(result_json)
