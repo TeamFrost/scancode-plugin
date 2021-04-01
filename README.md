@@ -75,7 +75,14 @@ python -m pip install .
 
 ## Docker
 
-You can use Docker to install scancode-toolkit by following the steps [here](https://scancode-toolkit.readthedocs.io/en/latest/getting-started/install.html#docker-install). Currently we are working on our own image which also includes the plugin.
+You can use Docker to install scancode-toolkit by following the steps [here](https://scancode-toolkit.readthedocs.io/en/latest/getting-started/install.html#docker-install). Currently we are working on our own image which also includes the plugin that you can find [here](https://hub.docker.com/r/simonesiss/scancode-plugin).
+You can also use the Dockerfile to build the image, but you will have to do that by also cloning the scancode-toolkit repository and adding our plugin, just like the instructions above. Just replace the Dockerfile from scancode with ours and build the image (in the scancode-toolkit directory):
+
+```
+docker build -t scancode-toolkit .
+```
+
+To run the tool you can follow the instructions [here](https://scancode-toolkit.readthedocs.io/en/latest/getting-started/install.html#docker-install).
 
 ## Usage
 
@@ -121,13 +128,11 @@ After you have you **result.json** file generated you can upload the file to Dx 
 
 ## Screenshots
 
-In the photo below you can see how the JSON is formatted after you run our plugin. You can identify the type by looking at *category*
+In the photo below you can see how the JSON is formatted after you run our plugin. You can identify the type by looking at _category_
 
 ![Data](screenshots/data.png)
 
-
 Here we can see how relevant is this in the Dx Platform and how easy we can identify which files use a license.
-
 
 ![Dxplatform](screenshots/dxplatfrom.png)
 
